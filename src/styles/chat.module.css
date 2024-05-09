@@ -1,0 +1,110 @@
+/* Container for entire chat box */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+/* Chat title */
+.container h1 {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Dropdown select and label */
+.container label {
+  padding: 10px;
+}
+
+.container select {
+  padding: 10px;
+  margin-bottom: 10px;  
+}
+
+/* Messages container */  
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Individual message paragraph */
+.messages p {
+  padding: 5px 0;
+}
+
+/* Input container */
+.input {
+  display: flex; 
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+  
+/* Text input box */
+.input input {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+/* Send button */
+.input button {
+  padding: 10px;
+}
+
+.message {
+  display: inline-block;
+  background-color: #eaeaea;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+.received {
+  text-align: left;
+  background-color: #f1f1f1;
+  word-wrap: break-word; 
+  float: left;
+}
+
+.sent {
+  text-align: right;
+  background-color: #e1e1e1;
+  word-wrap: break-word; 
+  float: right;
+}
+
+.received .text {
+  color: black;
+  word-wrap: break-word; 
+}
+
+.sent .text {
+  color: black;
+  word-wrap: break-word; 
+}
+
+.delivered .text {
+  color: green;
+  word-wrap: break-word; 
+}
+
+
+.sendButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.refreshButton {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
