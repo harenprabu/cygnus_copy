@@ -53,7 +53,7 @@ export default function App({username,last_name}) {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/visa-perview">
+          <Link color="foreground" href="/visa-preview">
            visa
           </Link>
         </NavbarItem>

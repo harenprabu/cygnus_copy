@@ -1,11 +1,10 @@
 
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
-import Link from 'next/link';
+//import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import PREVIEW from 'src/components/Instruction';
-import Navbar from 'src/components/navbar';
-
+import UPLOAD from 'src/components/vupload';
+import TEST from 'src/components/oldmethod';
 export default async function tab() {
   const supabase = createServerComponentClient({ cookies });
 
@@ -22,8 +21,8 @@ export default async function tab() {
   return (
     <div>
       
-
-<PREVIEW session={user}/>
+{/* <TEST/> */}
+<UPLOAD session={user}/>
      
     </div>
   );

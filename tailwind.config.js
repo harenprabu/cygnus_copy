@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import {nextui} from "@nextui-org/react";
 
-const forms = require('@tailwindcss/forms');
+
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}',
@@ -12,5 +12,8 @@ module.exports = {
 ],
   darkMode: 'media',
   plugins: [nextui(),
-    forms()],
+    require("@tailwindcss/forms")({
+     
+      strategy: 'class', // only generate classes
+    }),],
 };
